@@ -5,12 +5,11 @@ This script just echo color in bash!
 ## QuickStart
 
 ```bash
-git clone https://github.com/dyrnq/bash-color.git
+curl -fsSL https://cdn.jsdelivr.net/gh/dyrnq/bash-color@main/bash-color.sh | bash -s
 
-cd bash-color
+or
 
-./bash-color.sh
-
+curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/dyrnq/bash-color/main/bash-color.sh | bash -s
 ```
 
 ## Screenshot
