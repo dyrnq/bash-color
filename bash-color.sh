@@ -65,12 +65,14 @@ echo -e "${LIGHTCYAN}bash color \033[0m"
 echo -e "${WHITE}bash color \033[0m"
 
 # set unset 
-# 1 21 Bold/Bright	
+# 1 21 Bold/Bright
 # 2 22 Dim
-# 4 24 Underlined	
+# 3 23 Italic
+# 4 24 Underlined
 # 5 25 Blink
-# 7 27 Reverse (invert the foreground and background colors)	
-# 8 28 Hidden (useful for passwords)	
+# 7 27 Reverse (invert the foreground and background colors)
+# 8 28 Hidden (useful for passwords)
+# 9 29 strikethrough
 # 0 reset all
 
 echo -e "Normal \033[1mBold \033[0m"
@@ -120,7 +122,7 @@ echo -e "Normal \033[107mWhite \033[0m"
 
 echo " "
 
-for style in 0 1 2 3 4 5 6 7; do
+for style in 0 1 2 3 4 5 6 7 9; do
     for fg in 39 30 31 32 33 34 35 36 37 90 91 92 93 94 95 96 97; do
         for bg in 49 40 41 42 43 44 45 46 47 100 101 102 103 104 105 106 107; do
                 echo -n -e "\033[${style};${fg};${bg}m${style};${fg};${bg}m \033[0m"
